@@ -9,6 +9,7 @@ import {
   Toolbar,
 } from "@material-ui/core";
 import { useDispatch } from "react-redux";
+import "./header.css"
 
 function Header() {
   const history = useHistory();
@@ -29,14 +30,14 @@ function Header() {
   }, [location]);
   console.log("user", user);
   return (
-    <div>
+    <div className="container">
       {user ? <h3>{user.name}</h3> : ""}
       <Toolbar />
       {user ? (
         <Button onClick={logout}>LogOut</Button>
       ) : (
-        <Button component={Link} to="/auth">
-          SignIn
+        <Button className= "btn-sign" component={Link} to="/auth">
+          Sign-In
         </Button>
       )}
     </div>
