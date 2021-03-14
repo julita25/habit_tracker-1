@@ -41,6 +41,9 @@ function Form({ currentId, setCurrentId }) {
 
   return (
     <div>
+      <br/>
+      
+      <div className= "title">Enter your habits here</div>
       <form action="">
         <input
           value={habits.habit}
@@ -48,7 +51,11 @@ function Form({ currentId, setCurrentId }) {
           type="text"
           className="todo-input"
         />
-        <button onClick={submitTodoHandler}> + </button>
+        <div className= "container">
+        <button className= "btn-add" onClick={submitTodoHandler}> + </button>
+        </div>
+        
+
       </form>
     </div>
   );

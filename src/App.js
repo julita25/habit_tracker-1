@@ -9,6 +9,7 @@ import Auth from "./components/auth/Auth";
 import { getHabits } from "./actions/habits";
 import { Divider } from "@material-ui/core";
 
+
 function App() {
   const dispatch = useDispatch();
   const [currentId, setCurrentId] = useState(null);
@@ -17,16 +18,18 @@ function App() {
   }, [dispatch, currentId]);
 
   return (
-    <div>
-      <Router>
-        <Header />
-        <Form currentId={currentId} setCurrentId={setCurrentId} />
-        <Habits setCurrentId={setCurrentId} />
-        <Switch>
-          <Route path="/auth" exact component={Auth} />
-        </Switch>
-      </Router>
-    </div>
+    <div className="frame">
+      <div className="contain">
+        <Router>
+          <Header />
+          <Form currentId={currentId} setCurrentId={setCurrentId} />
+          <Habits setCurrentId={setCurrentId} />
+          <Switch>
+            <Route path="/auth" exact component={Auth} />
+          </Switch>
+        </Router>
+      </div>
+      </div>
   );
 }
 

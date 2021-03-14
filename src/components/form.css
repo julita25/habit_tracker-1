@@ -4,10 +4,27 @@ form {
   justify-content: center;
   align-items: center;
 }
+
+.title{
+  color: #111; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 50px; 
+  font-weight: 600px; 
+  letter-spacing: -1px; 
+  line-height: 1; 
+  text-align: center;
+}
+
+form input{
+  margin-left: 80px;
+}
+
 form input,
 form button {
+ 
   padding: 0.5rem;
   font-size: 2rem;
+  width: 500px;
   border: none;
   background: white;
 }
@@ -18,10 +35,19 @@ form button {
   transition: all 0.3s ease;
   width: 100px;
 }
+
+form button:hover::before {
+  top: 0;
+  left: 0;
+}
 form button:hover {
-  background: #ff6f47;
+  background: #d345b4;
   color: white;
+  border-bottom: 4px solid 
+
 }
 .filter-todo {
   padding: 1rem;
 }
+
+
