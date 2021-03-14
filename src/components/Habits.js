@@ -8,6 +8,7 @@ function Habits({ setCurrentId }) {
   return (
     <div>
     <br/>
+    <br/>
     
     <div className="todo-container">
       {habits.map((habit) => (

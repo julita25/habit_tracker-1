@@ -30,6 +30,7 @@ function Header() {
   }, [location]);
   console.log("user", user);
   return (
+<div className="head">
     <div className="container">
       {user ? <h3>{user.name}</h3> : ""}
       <Toolbar />
@@ -41,6 +42,9 @@ function Header() {
         </Button>
       )}
     </div>
+    <br/>
+    <div className= "title">Enter your habits here</div>
+</div>
   );
 }
 

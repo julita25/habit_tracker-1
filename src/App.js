@@ -18,8 +18,7 @@ function App() {
   }, [dispatch, currentId]);
 
   return (
-    <div className="frame">
-      <div className="contain">
+    <div >
         <Router>
           <Header />
           <Form currentId={currentId} setCurrentId={setCurrentId} />
@@ -28,8 +27,8 @@ function App() {
             <Route path="/auth" exact component={Auth} />
           </Switch>
         </Router>
-      </div>
-      </div>
+    </div>
+     
   );
 }
 

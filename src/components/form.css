@@ -5,18 +5,12 @@ form {
   align-items: center;
 }
 
-.title{
-  color: #111; 
-  font-family: 'Helvetica Neue', sans-serif; 
-  font-size: 50px; 
-  font-weight: 600px; 
-  letter-spacing: -1px; 
-  line-height: 1; 
-  text-align: center;
-}
+
 
 form input{
-  margin-left: 80px;
+  margin-left: 800px;
+  width: 100px;
+  height: 70px;
 }
 
 form input,
@@ -24,14 +18,14 @@ form button {
  
   padding: 0.5rem;
   font-size: 2rem;
-  width: 500px;
+  width: 2000px;
+  height: 70px;
   border: none;
   background: white;
 }
 form button {
   color: #ff6f47;
   background: #f7fffe;
-
   transition: all 0.3s ease;
   width: 100px;
 }
